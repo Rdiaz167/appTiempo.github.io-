@@ -820,7 +820,6 @@ footer {
 
 	.article {
 		width: 100%;
-		/* height: 100vh; */
 		background: rgb(30, 33, 58);
 	}
 
@@ -844,29 +843,15 @@ footer {
     .nomCiudades {
         left: 35px;
         width: 60%;
-}
-
-	.section1 {
-		display: grid;
-		gap: 10px;
-		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-		grid-auto-rows: 250px;
-		padding: 125px 200px 24px 200px;
-		background: rgb(16, 14, 29);
     }
 
     .tituloPrincipal {
-        padding-left: 32%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        height: 5rem;
     }
-
-	.section2 {
-		display: grid;
-		gap: 25px;
-		grid-template-columns: 1 1fr;
-		grid-template-rows: 220px 220px 170px 170px;
-		padding: 110px 150px 19px 150px;
-		background: rgb(16, 14, 29);
-	}
 
     .v5 {
         font-size: 55px;
@@ -874,6 +859,16 @@ footer {
 
     .v6 {
         font-size: 45px;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteinerPron5 {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 
     #barraLateral1.nuevaBarra {
