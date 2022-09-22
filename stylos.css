@@ -824,6 +824,10 @@ footer {
 		background: rgb(30, 33, 58);
 	}
 
+    .nubPrincipal {
+        top: 30%;
+    }
+
     .nubPrincipal2 {
         height: 270px;
     }
