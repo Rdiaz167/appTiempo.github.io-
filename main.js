@@ -67,7 +67,7 @@ if('geolocation' in navigator) {
                nubPrincipal.style = 'visibility: hidden'
                nubPrincipal2.style = 'visibility: visible'
                let imagen = data.weather[0].icon
-               let urlIcon = `http://openweathermap.org/img/wn/${imagen}.png`
+               let urlIcon = `https://openweathermap.org/img/wn/${imagen}.png`
                let dirImg = document.createElement('img')
                dirImg.src = `${urlIcon}`
                nubPrincipal2.appendChild(dirImg)
@@ -95,7 +95,7 @@ if('geolocation' in navigator) {
                let arr6 = ''
                arr5.forEach(x => {
                     let imagen = x.weather[0].icon
-                    let urlIcon = `http://openweathermap.org/img/wn/${imagen}.png`
+                    let urlIcon = `https://openweathermap.org/img/wn/${imagen}.png`
                     let tz = Math.floor(x.main.temp_max)
                     let ty = Math.floor(x.main.temp_min)
                     
@@ -136,7 +136,7 @@ geoLocalizacion.addEventListener('click', () => {
                .then(res => res.json())
                .then(data => {   
                     let imagen = data.weather[0].icon
-                    let urlIcon = `<img src="http://openweathermap.org/img/wn/${imagen}.png">`
+                    let urlIcon = `<img src="https://openweathermap.org/img/wn/${imagen}.png">`
                     nubPrincipal2.innerHTML = urlIcon
                     ubicacion.innerHTML = `<i class="fa-solid fa-location-dot"></i> &nbsp; ${data.name}`
                     let temperatura = Math.round(data.main.temp)
@@ -161,7 +161,7 @@ geoLocalizacion.addEventListener('click', () => {
                     let arr6 = ''
                     arr5.forEach(x => {
                          let imagen = x.weather[0].icon
-                         let urlIcon = `http://openweathermap.org/img/wn/${imagen}.png`
+                         let urlIcon = `https://openweathermap.org/img/wn/${imagen}.png`
                          let tz = Math.floor(x.main.temp_max)
                          let ty = Math.floor(x.main.temp_min)
                          arr6 = arr6 + `<div class="card">
@@ -229,7 +229,7 @@ nomCiudades.addEventListener('click',async ()=> {
                document.getElementById('barraLateral1').classList.toggle('nuevaBarra');
                  
                let imagen = datos1.weather[0].icon
-               let urlIcon = `<img src="http://openweathermap.org/img/wn/${imagen}.png">`
+               let urlIcon = `<img src="https://openweathermap.org/img/wn/${imagen}.png">`
                nubPrincipal2.innerHTML = urlIcon
                let temperatura = Math.round(datos1.main.temp)
                temp.textContent = `${temperatura}°C`
@@ -256,7 +256,7 @@ nomCiudades.addEventListener('click',async ()=> {
                     let arr6 = ''
                     arr5.forEach(x => { 
                          let imagen = x.weather[0].icon
-                         let urlIcon = `http://openweathermap.org/img/wn/${imagen}.png`              
+                         let urlIcon = `https://openweathermap.org/img/wn/${imagen}.png`              
                          let tz = Math.floor(x.main.temp_max)
                          let ty = Math.floor(x.main.temp_min)
                          arr6 = arr6 + `<div class="card">
