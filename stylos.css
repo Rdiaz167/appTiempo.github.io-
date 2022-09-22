@@ -820,9 +820,21 @@ footer {
 
 	.article {
 		width: 100%;
-		height: 100vh;
+		/* height: 100vh; */
 		background: rgb(30, 33, 58);
 	}
+
+    .nubPrincipal2 {
+        height: 270px;
+    }
+
+    .temp {
+        height: 210px;
+    }
+
+    .estadoTiempo {
+        height: 75px;
+    }
 
     .nomCiudades {
         left: 35px;
@@ -868,11 +880,11 @@ footer {
     }
 
     .botonBuscador {
-        left: 75%;
+        left: 73%;
     }
 
     .buscador {
-        width: 65%;
+        width: 60%;
         top: 76px;
     }
 }
