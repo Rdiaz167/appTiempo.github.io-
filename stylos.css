@@ -892,3 +892,9 @@ footer {
         top: 76px;
     }
 }
+
+@media (max-width: 1670px) {
+    .v5 {
+        font-size: 55px;
+    }
+}
