@@ -871,6 +871,10 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     }
 
+    .spiner {
+        left: 1.3rem;
+    }
+
     #barraLateral1.nuevaBarra {
         width: 100%;
     }
